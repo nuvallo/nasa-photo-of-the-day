@@ -1,3 +1,23 @@
 .navbar {
-  background: purple;
+  background: #333;
+}
+
+.logo {
+  color: #ffffff;
+  padding: 20px;
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.navbar ul li {
+  padding: 20px;
+}
+
+.navbar ul li a {
+  color: #ffffff;
+  text-decoration: none;
 }
