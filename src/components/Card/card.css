@@ -4,3 +4,11 @@
   margin: 5% auto;
   padding: 20px;
 }
+
+.card img {
+  width: 100%;
+}
+
+.card p {
+  margin: 2% 0;
+}

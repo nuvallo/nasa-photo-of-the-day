@@ -1,13 +1,14 @@
 import React from "react";
 import "./card.css";
 
-export default function Card({ data }) {
+export default function Card(props) {
   return (
     <div className="card">
-      <img src=""></img>
-      <h1>{data}</h1>
-      <p className="date">8-12-2012</p>
-      <p className="explanation">paragragh</p>
+      <img src={props.url}></img>
+      <h1>{props.title}</h1>
+      <p className="date">{props.date}</p>
+      <p className="explanation">{props.explanation}</p>
+      <p className="copyright">Copyright: {props.copyright}</p>
     </div>
   );
 }
