@@ -1,14 +1,29 @@
 import React from "react";
-import "./navBar.css";
+// import "./navBar.css";
+import {
+  Collapse,
+  Navbar,
+  NavbarToggler,
+  NavbarBrand,
+  Nav,
+  NavItem,
+  NavLink,
+  UncontrolledDropdown,
+  DropdownToggle,
+  DropdownMenu,
+  DropdownItem
+} from "reactstrap";
+
 export default function NavBar() {
   return (
-    <nav className="navbar">
-      <h4 className="logo">NASA API</h4>
-      <ul>
-        <li>
-          <a href="#">Home</a>
-        </li>
-      </ul>
-    </nav>
+    <Navbar color="light" light expand="md">
+      <NavbarBrand href="/">NASA API </NavbarBrand>
+
+      <Nav className="mr-auto" navbar>
+        <NavItem>
+          <NavLink href="/components/">Home</NavLink>
+        </NavItem>
+      </Nav>
+    </Navbar>
   );
 }

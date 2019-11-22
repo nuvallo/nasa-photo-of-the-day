@@ -1,14 +1,27 @@
 import React from "react";
 import "./card.css";
+import {
+  Card,
+  CardImg,
+  CardText,
+  CardBody,
+  CardTitle,
+  CardSubtitle,
+  Button
+} from "reactstrap";
 
-export default function Card(props) {
+export default function CardComponent(props) {
   return (
     <div className="card">
-      <img src={props.url}></img>
-      <h1>{props.title}</h1>
-      <p className="date">{props.date}</p>
-      <p className="explanation">{props.explanation}</p>
-      <p className="copyright">Copyright: {props.copyright}</p>
+      <Card>
+        <CardImg top width="100%" src={props.url} alt="NASA Image" />
+        <CardBody>
+          <CardTitle>{props.title}</CardTitle>
+          <CardSubtitle>{props.date}</CardSubtitle>
+          <CardText>{props.explanation}</CardText>
+          <Button>Read More</Button>
+        </CardBody>
+      </Card>
     </div>
   );
 }
