@@ -7,18 +7,18 @@ import {
   CardBody,
   CardTitle,
   CardSubtitle,
-  Button
+  Button,
 } from "reactstrap";
 
-export default function CardComponent(props) {
+export default function CardComponent({ card }) {
   return (
     <div className="card">
       <Card>
-        <CardImg top width="100%" src={props.url} alt="NASA Image" />
+        <CardImg top width="100%" src={card.url} alt="NASA Image" />
         <CardBody>
-          <CardTitle>{props.title}</CardTitle>
-          <CardSubtitle>{props.date}</CardSubtitle>
-          <CardText>{props.explanation}</CardText>
+          <CardTitle>{card.title}</CardTitle>
+          <CardSubtitle>{card.date}</CardSubtitle>
+          <CardText>{card.explanation}</CardText>
           <Button>Read More</Button>
         </CardBody>
       </Card>
